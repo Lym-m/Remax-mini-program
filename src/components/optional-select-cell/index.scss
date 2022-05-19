@@ -1,0 +1,50 @@
+.optionalSelectCell {
+  padding: 18px 16px 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ebedf0;
+
+  .head {
+    font-size: 16px;
+    color: #090a0a;
+    margin-bottom: 20px;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .rowRadio {
+      display: flex;
+      flex-direction: row;
+
+      .inactiveRadio {
+        color: #9ea1a8;
+      }
+
+      .gutter {
+        margin-right: 10px;
+      }
+    }
+
+    .selectText {
+      font-size: 16px;
+      color: #9ea1a8;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &.hide {
+         display: none;
+      }
+    }
+  }
+
+  .errorMessage {
+    padding-right: 26px;
+    text-align: right;
+    color: var(--field-error-message-color,#ee0a24);
+    font-size: var(--field-error-message-text-font-size,12px);
+  }
+}

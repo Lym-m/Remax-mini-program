@@ -1,0 +1,33 @@
+.login {
+  background: #1988f7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.loginForm {
+  background: #ffffff;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 50vh;
+  padding: 50px;
+}
+
+.field {
+  border-bottom: solid 1px #d3d5db;
+}
+
+.label {
+  font-size: 15px;
+  color: #54575c;
+}
+
+.button {
+  --button-normal-font-size: 16px;
+  letter-spacing: 3px;
+}

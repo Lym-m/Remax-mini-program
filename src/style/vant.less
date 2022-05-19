@@ -1,0 +1,70 @@
+// 当前文件只需要直接导入，不能导入名称
+
+.single-checked-radio {
+  .van-radio .van-radio__icon-wrap {
+    .van-radio__icon.van-radio__icon--round.van-radio__icon--checked {
+      //--radio-checked-icon-color: #fff;
+      background-color: #fff;
+
+      .van-icon.van-icon-success {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: var(--radio-checked-icon-color,#1989fa);
+
+        &::before {
+          content: " ";
+        }
+      }
+    }
+  }
+
+  --radio-border-color: #757880;
+}
+
+.large-cell, .large-field {
+  .van-cell {
+    --cell-vertical-padding: 15px;
+
+    .van-cell__title, .van-cell__value {
+      font-size: 16px;
+    }
+
+    &::after {
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+}
+
+.large-cell {
+  // 当在展示详情的时候会变为原有的padding
+  &.normal {
+    .van-cell {
+      --cell-vertical-padding: 10px;
+    }
+  }
+
+  .van-cell {
+    --cell-value-color: #54575c;
+    --cell-text-color: #090a0a;
+  }
+}
+
+.large-field {
+  .van-field__label {
+    font-size: 16px;
+    color: var(--custom-field-label-color, #090a0a) !important;
+  }
+
+  .van-field__placeholder {
+    color: #9ea1a8;
+    font-size: 16px;
+  }
+
+  .van-field__body {
+    .van-field__control {
+      font-size: 16px;
+    }
+  }
+}

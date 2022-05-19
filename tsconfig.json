@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "types": ["miniprogram-api-typings"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@vant/weapp/*": ["./node_modules/@vant/weapp/dist/*"]
+    },
+    "lib": ["DOM", "ES2015"]
+  },
+  "include": ["src/**/*", "typings/**/*"]
+}

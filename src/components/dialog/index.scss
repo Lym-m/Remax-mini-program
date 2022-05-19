@@ -1,0 +1,7 @@
+.dialog {
+  --dialog-border-radius: 10px;
+
+  :global(.van-dialog__footer) {
+    --button-large-height: 45px;
+  }
+}

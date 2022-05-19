@@ -1,0 +1,21 @@
+.actions {
+  :global(.van-action-sheet__item) {
+    font-size: 21px;
+  }
+
+  :global(.van-popup) {
+    background: transparent;
+    padding: 8px;
+  }
+
+  :global(.van-action-sheet__gap) {
+    display: none;
+  }
+
+  :global(.van-action-sheet__cancel) {
+    color: #007aff;
+    border-radius: 5px;
+    margin: 8px 0;
+    font-size: 21px;
+  }
+}

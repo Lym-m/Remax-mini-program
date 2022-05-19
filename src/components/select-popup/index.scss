@@ -1,0 +1,75 @@
+.selectPopup {
+  --select-popup-top-gutter: 50px;
+
+  .popupContent {
+    padding: 20px 15px 0 15px;
+
+    &::after {
+      content: " ";
+      display: block;
+      height: 65px;
+    }
+
+    .popupTitle {
+      text-align: center;
+      font-size: 18px;
+      color: #090a0a;
+      padding-bottom: 14px;
+      border-bottom: solid 1px #cbced2;
+      //margin-bottom: 15px;
+    }
+  }
+
+  .actions {
+    position: fixed;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px calc(env(safe-area-inset-bottom) + 10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #dadce0;
+
+    .button {
+      --button-border-radius: 4px;
+      --button-normal-font-size: 17px;
+    }
+
+    .buttonWrap {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+
+  :global(.van-popup) {
+    max-height: calc(100vh - var(--select-popup-top-gutter, 0px));
+  }
+
+  &.fixed {
+    --select-popup-title-height: 60px;
+    --select-popup-bottom-height: calc(50px + env(safe-area-inset-bottom));
+
+    :global(.van-popup) {
+      height: calc(100vh - var(--select-popup-top-gutter, 0px));
+    }
+
+    .popupContent {
+
+      .popupTitle {
+        background-color: #ffffff;
+        position: fixed;
+        top: calc(var(--select-popup-top-gutter, 0px));
+        padding-top: 20px;
+        left: 15px;
+        right: 15px;
+      }
+
+      .popupBody {
+        padding-top: 40px;
+      }
+    }
+  }
+}

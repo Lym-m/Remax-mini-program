@@ -1,0 +1,9 @@
+<view>
+  <VanCalendar
+    poppable="{{ false }}"
+    formatter="{{formatter}}"
+    default-date="{{ defaultDate }}"
+    bind:select="selectTime"
+    show-confirm="{{ false }}">
+  </VanCalendar>
+</view>

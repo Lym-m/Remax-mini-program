@@ -1,0 +1,53 @@
+.singleSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-top: 5px;
+
+  .item {
+    font-size: 16px;
+    color: #757880;
+    padding: 10px 0;
+    text-align: center;
+
+    &.active {
+      color: #090a0a;
+      background-color: #ebf8ff;
+    }
+  }
+}
+
+.multiSelect {
+  margin-top: 2px;
+
+  .scroll {
+    //max-height: 270px;
+    max-height: 275px;
+  }
+
+  .scrollInner {
+    //padding: 0 36rpx;
+  }
+
+  .lineWrap {
+    padding: 12px 36rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & + .lineWrap {
+      border-top: solid 1px #dadce0;;
+    }
+  }
+
+  .label {
+    color: #757880;
+    font-size: 16px;
+
+    &.active {
+      color: #090a0a;
+    }
+  }
+}

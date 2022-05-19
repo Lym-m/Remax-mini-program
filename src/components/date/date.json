@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "VanCalendar": "@vant/weapp/lib/calendar/index"
+  }
+}

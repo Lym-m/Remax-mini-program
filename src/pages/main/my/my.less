@@ -1,0 +1,158 @@
+.my {
+  height: 100vh;
+  background-color: #dcdcdc;
+  position: relative;
+
+  .navBar {
+    background: gold;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gold;
+
+    .baseInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 0 10px 0;
+
+      .headPhoto {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: 1px solid #dcdcdc;
+      }
+
+      .name {
+        padding-top: 10px;
+        font-size: 14px;
+      }
+    }
+
+    .statistical {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 0;
+
+      .statisticalItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+
+        .number {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 15px;
+
+    .bill {
+      background: #ffffff;
+      padding: 1px;
+      border-radius: 5px;
+
+      .billDetail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 10px 10px 15px;
+        font-size: 12px;
+
+        .month {
+          padding-right: 10px;
+          margin-right: 20px;
+          border-right: 1px black solid;
+
+          .monthNumber {
+            font-size: 20px;
+          }
+        }
+
+        .detail {
+          display: flex;
+          flex-direction: row;
+          flex-grow: 1;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 50px;
+
+          .detailItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .itemName{
+              padding-bottom: 7px;
+              color: #808080;
+            }
+          }
+        }
+      }
+    }
+    .setBudget {
+      margin-top: 15px;
+      background: #ffffff;
+      padding: 5px;
+      border-radius: 5px;
+
+      .budgetHead {
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+
+        .white {
+          color: black !important;
+          border-radius: 5px;
+        }
+      }
+
+      .budgetDetail {
+        padding: 5px 10px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .detailItems {
+          flex-grow: 1;
+          padding-left: 20px;
+
+          .commonItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+          }
+          .border {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #dcdcdc;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 0 15px;
+    position: absolute;
+    bottom: 70px;
+    width: 91%;
+  }
+}

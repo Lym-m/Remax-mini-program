@@ -1,0 +1,141 @@
+.home {
+    height: 100vh;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+
+    .navBar {
+        background: gold;
+    }
+
+    .overview {
+        padding: 10px;
+        background: gold;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .leftItem {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-size: 12px;
+                color: #808080;
+            }
+
+            .year {
+                margin-top: 10px;
+                padding: 2px 30px 0 0;
+                border-right: 0.8px solid black;
+
+                .downIcon {
+                    margin-left: 4px;
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+
+        .rightItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-grow: 1;
+
+            .overviewItem {
+                display: flex;
+                flex-direction: column;
+
+                .title {
+                    font-size: 12px;
+                    color: #808080;
+                }
+
+                .moneyNumber {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .table {
+        flex-grow: 1;
+        position: relative;
+
+        .tableBody {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: calc(50px + env(safe-area-inset-bottom));
+
+            .body {
+                display: flex;
+                flex-direction: column;
+
+                .bodyHead{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 12px;
+                    color: #808080;
+                    padding: 10px;
+                    border-bottom: 0.6px solid #f5f5f5;
+
+                    .date {
+                        .week {
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .spend {
+                        margin-left: 15px;
+                    }
+                }
+
+                .bodyRow {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: 14px;
+
+                    .activeItem {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 12px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: gold;
+                        margin: 0 10px;
+                    }
+                    .icon {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    .detail {
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 10px 10px 0;
+                        border-bottom: 0.6px solid #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hover_click {
+    opacity: 0.9;
+    background: #FFA500;
+}

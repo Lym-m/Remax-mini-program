@@ -1,0 +1,50 @@
+{
+  "name": "mini-program",
+  "private": true,
+  "version": "1.0.0",
+  "description": "a billing system",
+  "main": "index.js",
+  "keywords": [],
+  "author": "yangming <330122193@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -t wechat -w",
+    "build": "cross-env NODE_ENV=production remax build -t wechat",
+    "proxy": "webpack serve --config webpack-proxy.config.js"
+  },
+  "dependencies": {
+    "@vant/weapp": "^1.6.8",
+    "async-validator": "^3.5.1",
+    "clsx": "^1.1.1",
+    "formik": "^2.2.6",
+    "react": "^16.14.0",
+    "react-use": "^17.2.3",
+    "remax": "^2.9.1"
+  },
+  "devDependencies": {
+    "@remax/plugin-less": "^1.0.0",
+    "@types/lodash": "^4.14.168",
+    "@types/react": "^16.14.2",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.22.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.8",
+    "typescript": "^4.1.2",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+.account {
+  height: 100vh;
+  background-color: #ffffff;
+
+  .nav {
+    background-color: gold;
+  }
+
+  .short {
+    height: 48vh;
+  }
+
+  .long{
+    height: 75vh;
+  }
+
+  .tabs {
+    background-color: #ffffff;
+
+    .itemIcon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .commonItem {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 40rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+
+    .activeItem {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 40rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: gold;
+    }
+
+    .itemLabel {
+      font-size: 12px;
+      padding-top: 5px;
+    }
+  }
+
+  .popupContent {
+    background-color: #dcdcdc;
+    height: 99%;
+    overflow: hidden;
+    border-top: 1px solid #dcdcdc;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border-bottom: 1px solid #dcdcdc;
+
+      .amount {
+        font-size: 24px;
+        color: black;
+        padding-right: 10px;
+      }
+    }
+
+    .keyLabel {
+      font-size: 14px;
+    }
+
+    .clearIcon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .popupFooter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+
+      .footerItem {
+        width: 50%;
+        border-bottom: 1px solid #f5f5f5;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 14px 0;
+        align-items: center;
+      }
+
+      .white {
+        background-color: white;
+      }
+
+      .gold {
+        background-color: gold;
+      }
+    }
+  }
+}
+
+.hover_click {
+  opacity: 0.9;
+  background: #f7f7f7;
+}
+
+.hover_btn_click {
+  opacity: 0.9;
+  background: orange;
+}
